@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useCallback } from 'react'
+import { useDispatch } from 'react-redux'
+import Layout from './hoc/Layout/Layout'
+import Cities from './components/Cities/Cities'
+import * as actions from './store/actions/actions'
+
+const initCities = [
+	'Tel Aviv',
+	'Berlin',
+	'Thailand',
+	'Paris',
+	'Amsterdam',
+	'New York',
+	'Mexico',
+	'Vancouver',
+	'Miami',
+	'Sydney'
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch()
+	const onFetchCities = useCallback(
+		() => dispatch(actions.fetchCities(initCities)),
+		[dispatch]
+	)
+
+	useEffect(() => {
+		onFetchCities()
+	}, [onFetchCities])
+
+	return (
+		<div>
+			<Layout>
+				<Cities />
+			</Layout>
+		</div>
+	)
 }
 
-export default App;
+export default App

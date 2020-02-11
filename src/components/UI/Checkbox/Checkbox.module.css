@@ -1,0 +1,36 @@
+.Container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Checkbox {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  border-radius: 3px;
+  transition: all 150ms;
+}
+
+.Hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.Checkbox:focus {
+  box-shadow: 0 0 0 3px pink;
+}
+
+.Icon {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
