@@ -8,7 +8,7 @@ The user can click on the checkbox of each city and the "Refresh" button to get 
 
 Weather info provided by OpenWeatherMap(https://openweathermap.org/)
 
-Demo: [https://rons-react-weatherapp.herokuapp.com](https://rons-react-weatherapp.herokuapp.com)
+Demo: [http://rons-react-weather-app.herokuapp.com/](http://rons-react-weather-app.herokuapp.com/)
 
 ## Table Of Contents
 - [Weather-App](#weather-app)
