@@ -4,7 +4,7 @@ import classes from './Checkbox.module.css'
 const Checkbox = props => (
 	<div className={classes.Container}>
 		<label>
-			<input className={classes.Hidden} type='checkbox' {...props} aria-checked={props.checked} />
+			<input className={classes.Hidden} type='checkbox' {...props} aria-checked={props.checked} aria-label="checkbox" />
 			<div
 				className={classes.Checkbox}
 				style={{
