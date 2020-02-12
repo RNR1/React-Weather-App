@@ -9,9 +9,9 @@ import CreateSagaMiddleware from 'redux-saga'
 import reducer from './store/reducer/reducer'
 import {watchCity} from './store/saga/'
 
-const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose
+
 const saga = CreateSagaMiddleware()
-const store = createStore(reducer, composeEnhancers(applyMiddleware(saga)))
+const store = createStore(reducer, applyMiddleware(saga))
 saga.run(watchCity)
 
 const app = (
