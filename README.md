@@ -20,8 +20,9 @@ Demo: [http://rons-react-weather-app.herokuapp.com/](http://rons-react-weather-a
 ## Running the project
 1. Clone the repo.
 2. Run `npm install`.
-3. Run `npm start`.
-4. Navigate to `http://localhost:3000`.
+3. Run `npm run build`
+4. Run `npm start`.
+5. Navigate to `http://localhost:5000`.
 
 ## Screenshots
 
