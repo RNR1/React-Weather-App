@@ -6,7 +6,6 @@ import Checkbox from '../UI/Checkbox/Checkbox'
 const City = props => {	
 	const {onCheck} = props
 	const {name} = props.city
-	console.log('city')
 	const checkHandler = useCallback((e) => {
 		onCheck(name)
 	}, [onCheck, name])

@@ -2,6 +2,8 @@ import React, { useCallback } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import * as actions from '../../store/actions/actions'
 import City from '../City/City'
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
+import cities from '../../axios-cities'
 import classes from './Cities.module.css'
 import Button from '../UI/Button/Button'
 import Spinner from '../UI/Spinner/Spinner'
@@ -36,4 +38,4 @@ const Cities = React.memo(props => {
 	)
 })
 
-export default Cities
+export default withErrorHandler(Cities, cities)
