@@ -19,11 +19,10 @@ Demo: [http://rons-react-weather-app.herokuapp.com/](http://rons-react-weather-a
 
 ## Running the project
 
-1. Create an account in OpenWeatherMap, then navigate to https://home.openweathermap.org/api_keys and create an api_key
-2. Clone the repo.
-3. Run `npm install`.
-4. Run `npm run dev`
-5. Navigate to `http://localhost:3000`.
+1. Clone the repo.
+2. Run `npm install`.
+3. Run `npm run dev`
+4. Navigate to `http://localhost:3000`.
 
 ## Screenshots
 
